@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Content</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to EduLearn</h1>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="courses">
+      <h2>Courses</h2>
+      <div class="course-card">
+        <h3>Math Basics</h3>
+        <p>Learn arithmetic, geometry, and more.</p>
+      </div>
+      <div class="course-card">
+        <h3>Science Explorations</h3>
+        <p>Explore physics, biology, and chemistry topics.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About EduLearn</h2>
+      <p>We provide high-quality educational content for students of all ages.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EduLearn. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
