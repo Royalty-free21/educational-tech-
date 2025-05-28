@@ -1,0 +1,22 @@
+                        ┌──────────────┐
+                        │   End User   │
+                        └──────┬───────┘
+                               │ HTTPS
+                               ▼
+                        ┌──────────────┐
+                        │ CloudFront   │  ← CDN + SSL (ACM)
+                        └──────┬───────┘
+                               │ (cached)
+                               ▼
+                        ┌──────────────┐
+                        │    S3 Bucket │  ← Static Website Hosting (Public Read)
+                        └──────────────┘
+                               ▲
+                     ┌────────┴────────┐
+                     │   CI/CD or      │ ← Internal Team Uploads
+                     │   Manual Upload │
+                     └─────────────────┘
+
+                    ┌─────────────────┐
+                    │   Route 53      │ ← DNS (e.g., www.innovateed.com)
+                    └─────────────────┘
